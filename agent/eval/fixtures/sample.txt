@@ -1,0 +1,4 @@
+Hello Terminal Agent
+This is a fixture file used only for evaluation tasks.
+def sample_function():
+    pass

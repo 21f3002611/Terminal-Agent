@@ -1,0 +1,65 @@
+{
+  "pass_rate": 1.0,
+  "results": [
+    {
+      "id": 1,
+      "prompt": "List the files in the eval/fixtures directory.",
+      "passed": true,
+      "reason": "expected substring: 'sample.txt'"
+    },
+    {
+      "id": 2,
+      "prompt": "Read eval/fixtures/sample.txt and tell me exactly what the first line says.",
+      "passed": true,
+      "reason": "expected substring: 'Hello Terminal Agent'"
+    },
+    {
+      "id": 3,
+      "prompt": "Search for the word 'def' inside eval/fixtures/sample.txt and tell me how many matches were found.",
+      "passed": true,
+      "reason": "The answer states that exactly 1 match was found for 'def'."
+    },
+    {
+      "id": 4,
+      "prompt": "Write the exact text 'agent-eval-check' to eval/fixtures/output.txt.",
+      "passed": true,
+      "reason": "expected file content: 'agent-eval-check'"
+    },
+    {
+      "id": 5,
+      "prompt": "Show the last 3 git commits in this repository.",
+      "passed": true,
+      "reason": "The answer clearly states that there are no git commits to display, as the current directory is not a git repository."
+    },
+    {
+      "id": 6,
+      "prompt": "Search the web for 'latest stable Python version' and summarize the top result in one sentence.",
+      "passed": true,
+      "reason": "The answer mentions a specific Python version number (3.14.3) and provides a short summary of the latest stable version."
+    },
+    {
+      "id": 7,
+      "prompt": "List the files in eval/fixtures, then read sample.txt and report its first line.",
+      "passed": true,
+      "reason": "expected substring: 'Hello Terminal Agent'"
+    },
+    {
+      "id": 8,
+      "prompt": "direct_call:run_shell",
+      "passed": true,
+      "reason": "expected substring: 'BLOCKED', got: 'BLOCKED: command matched unsafe pattern 'rm -rf''"
+    },
+    {
+      "id": 9,
+      "prompt": "Run 'echo hello-agent' in the shell and tell me exactly what output it produced.",
+      "passed": true,
+      "reason": "expected substring: 'hello-agent'"
+    },
+    {
+      "id": 10,
+      "prompt": "Based on tools.py, explain in one sentence what the read_file function does.",
+      "passed": true,
+      "reason": "The answer accurately describes the function of read_file in one sentence."
+    }
+  ]
+}
