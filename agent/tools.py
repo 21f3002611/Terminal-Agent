@@ -250,7 +250,7 @@ def run_agent(task: str, on_step=None):
             messages.append(msg)
             for call in msg.tool_calls:
                 fn_name = call.function.name
-                fn_args = json.loads(call.function.arguments)
+                fn_args = json.loads(call.function.arguments) or {}
 
                 result = TOOL_FUNCTIONS[fn_name](**fn_args)
 
