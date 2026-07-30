@@ -1,5 +1,5 @@
 import click
-from tools import run_agent
+from agent.tools import run_agent
 
 
 def format_args(args: dict) -> str:
